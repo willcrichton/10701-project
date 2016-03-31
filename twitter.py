@@ -6,7 +6,7 @@ LATLONG = (32.11766, 20.12928) # Benghazi
 def main():
     tso = TwitterSearchOrder()
     tso.set_keywords([''])
-    tso.set_geocode(LATLONG[0], LATLONG[1], 10)
+    tso.set_geocode(LATLONG[0], LATLONG[1], 50)
     tso.set_include_entities(False)
 
     ts = TwitterSearch(
